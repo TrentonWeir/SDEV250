@@ -12,8 +12,9 @@ button{
 }
 div{
     border: 2px solid white;
-    padding: 10px;
+    
 }
+
 /* header */
 #header{
     height: 20%;
@@ -22,10 +23,25 @@ div{
 
 
 /* Navigation */
-#Nav{
-    border:none;
+ul{
+    position: fixed;
+    overflow: auto;
 }
-#div1{
+li a{
+    display: block;
+    width: 2em;
+}
+.NavBTN{
+    border:2px solid orange;
+    width: 5em;
+    height: 5em;
+    text-align: center;
+}
+.NavBTN:hover{
+    color:red;
+    background-color: orange;
+}
+#navigation{
     width: 5%;
     top: 100%;
 }

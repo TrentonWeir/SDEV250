@@ -47,5 +47,20 @@
         </fieldset>
      </form>
    </article>
+   <script>
+     function insertPlaceHolders(){
+       if(!Modernizr.input.placeholder){
+         document.getElementById("nameinput").value = "first and last name";
+         document.getElementById("emailinput").value = "adress@example.com";
+         document.getElementById("phoneinput").value = "###-###-####";
+        }
+     }
+     if(window.addEventListener){
+        window.addEventListener("load",insertPlaceHolders,false);
+     }
+     else if(window.attachEvent){
+        window.attachEvent("onload",insertPlaceHolders);
+      }
+   </script>
 </body>
 </html>
