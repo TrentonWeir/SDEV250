@@ -4,8 +4,8 @@
 
  *    Photo gallery
  *    Variables and functions
- *    Author: 
- *    Date:   
+ *    Author: Trenton Weir
+ *    Date:   11/14/2021
 
  *    Filename: photos.js
  */
@@ -36,6 +36,14 @@ function leftArrow() {
          photoOrder[i] -= 1;
       }
       populateFigures();
+   }
+}
+function createEventListeners(){
+   var leftarrow = document.getElementById("leftarrow");
+   if (leftarrow.addEventListener){
+      leftarrow.addEventListener("click",leftArrow,false);
+   }else if(leftarrow.attachEvent){
+      leftarrow.attachEvent("onclick",leftArrow);
    }
 }
 
