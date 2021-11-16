@@ -28,7 +28,7 @@
    <article>
       <h2>United States Bill of Rights</h2>
       <h3>Table of Contents</h3>
-      <ul></ul>
+      <ul id="tableOfContents"></ul>
       <h3 id="1">Amendment I</h3>
       <p>Congress shall make no law respecting an establishment of religion, or prohibiting the free exercise thereof; or abridging the freedom of speech, or of the press; or the right of the people peaceably to assemble, and to petition the Government for a redress of grievances.</p>
       <h3 id="2">Amendment II</h3>
@@ -42,7 +42,7 @@
       <h3 id="6">Amendment VI</h3>
       <p>In all criminal prosecutions, the accused shall enjoy the right to a speedy and public trial, by an impartial jury of the State and district wherein the crime shall have been committed, which district shall have been previously ascertained by law, and to be informed of the nature and cause of the accusation; to be confronted with the witnesses against him; to have compulsory process for obtaining witnesses in his favor, and to have the Assistance of Counsel for his defence.</p>
       <h3 id="7">Amendment VII</h3>
-      <p>In Suits at common law, where the value in controversy shall exceed twenty dollars, the right of trial by jury shall be preserved, and no fact tried by a jury, shall be otherwise re-examined in any Court of the United States, than according to the rules of the common law.</p>
+      <p>In Suits at common law, where the value in controversy shall exceed twenty dollars, the right of trial by jury shall be preserved, and no fact tried by ijury, shall be otherwise re-examined in any Court of the United States, than according to the rules of the common law.</p>
       <h3 id="8">Amendment VIII</h3>
       <p>Excessive bail shall not be required, nor excessive fines imposed, nor cruel and unusual punishments inflicted.</p>
       <h3 id="9">Amendment IX</h3>
@@ -50,5 +50,27 @@
       <h3 id="10">Amendment X</h3>
       <p>The powers not delegated to the United States by the Constitution, nor prohibited by it to the States, are reserved to the States respectively, or to the people.</p>
    </article>
+   <script>
+      // References the only "<ul>" in the document.
+var list = document.getElementById("tableOfContents");
+function createTOC () {
+ 
+  for (var i= 1; i<= 10; i++) {
+    (function(i) {
+    var headingText = document.getElementById(i).innerHTML;
+    var TOCEntry = document.createElement ("li");
+    TOCEntry.innerHTML = "<a href=\"#" + i+ "\">" + headingText + "</a>";
+    list.appendChild (TOCEntry);
+  })(i);
+ }
+}
+if (window.addEventListener) {
+ window.addEventListener ("load", createTOC, false);
+}
+else if (window.attachEvent) {
+ window.attachEvent ("onload", createTOC);
+}
+
+   </script>
 </body>
 </html>
