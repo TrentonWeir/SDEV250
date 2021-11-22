@@ -1,47 +1,15 @@
-*{
-    padding: 0;
-    margin:0;
-    color:white;
-}
-body{
-    background-color: black;
-    
-}
 button{
-    background-color: transparent;
+    background-color: "rbg(200,200,200)";
+    color: black;
+    font-weight: bold;
 }
-div{
-    border: 2px solid white;
-    
+.inputBox{
+    margin: .2em;
+    padding: 1em;
+    width: 80%;
 }
-
-/* header */
-#header{
-    height: 20%;
-    width: 100%;
-}
-
-
-/* Navigation */
-ul{
-    position: fixed;
-    overflow: auto;
-}
-li a{
-    display: block;
-    width: 2em;
-}
-.NavBTN{
-    border:2px solid orange;
-    width: 5em;
-    height: 5em;
-    text-align: center;
-}
-.NavBTN:hover{
-    color:red;
-    background-color: orange;
-}
-#navigation{
-    width: 5%;
-    top: 100%;
-}
+/* textarea{
+    margin: .2em;
+    padding: 1em;
+    width: 80%;
+} */

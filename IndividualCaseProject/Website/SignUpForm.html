@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<title>About JaigerJakGames</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+<style>
+body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
+.w3-row-padding img {margin-bottom: 12px}
+/* Set the width of the sidebar to 120px */
+.w3-sidebar {width: 120px;background: #222;}
+/* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
+#main {margin-left: 120px}
+/* Remove margins from "page content" on small screens */
+@media only screen and (max-width: 600px) {#main {margin-left: 0}}
+</style>
+<link rel="stylesheet" href="index.css">
+<body class="w3-black">
+
+<!-- Icon Bar (Sidebar - hidden on small screens) -->
+<nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center">
+  <!-- Avatar image in top left corner -->
+  <img src="Image/CsharpLogo.png" style="width:100%">
+  <a href="home.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fa fa-home w3-xxlarge"></i>
+    <p>HOME</p>
+  </a>
+  <a href="aboutUs.html" class= "w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fa fa-eye w3-xxlarge"></i>
+    <p>ABOUT</p>
+  </a>
+  <a href="SoftwareInfo.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fa fa-envelope w3-xxlarge"></i>
+    <p>Software</p>
+  </a>
+  <a href="GamesInDevelopment.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fa fa-user w3-xxlarge"></i>
+    <p>GAMES</p>
+  </a>
+  <a href="SignUpForm.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fa fa-dragon w3-xxlarge"></i>
+    <p>Join Us</p>
+  </a>
+  <a href="WebSafty.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fa fa-eye w3-xxlarge"></i>
+    <p>Web-Safty</p>
+  </a>
+</nav>
+
+<!-- Navbar on small screens (Hidden on medium and large screens) -->
+<div class="w3-top w3-hide-large w3-hide-medium" id="myNavbar">
+  <div class="w3-bar w3-black w3-opacity w3-hover-opacity-off w3-center w3-small">
+    <a href="home.html" class="w3-bar-item w3-button" style="width:25% !important">HOME</a>
+    <a href="aboutUs.html" class="w3-bar-item w3-button" style="width:25% !important">ABOUT</a>
+    <a href="SoftwareInfo.html" class="w3-bar-item w3-button" style="width:25% !important">SOFTWARE</a>
+    <a href="GamesInDevelopment.html" class="w3-bar-item w3-button" style="width:25% !important">CONTACT</a>
+  </div>
+</div>
+
+<!-- Page Content -->
+<div class="w3-padding-large" id="main">
+  <!-- Header/Home -->
+  <header class="w3-container w3-padding-32 w3-center w3-black" id="home">
+    <h1 class="w3-jumbo"><span class="w3-hide-small">Jaiger</span> Jak Games</h1>
+    <p>Games made with Unity5</p>
+    <img src="Image/Unity5Logo.jpeg" alt="Unity5" class="w3-image" width="1600" height="900">
+  </header>
+
+  <div class="w3-padding-large">
+      
+
+  <!-- Contact Section -->
+  <div class="w3-padding-64 w3-content w3-text-grey" id="contact">
+    <h2 class="w3-text-light-grey">Become part of our Dev Community</h2>
+    <hr style="width:200px" class="w3-opacity">
+
+    <br>
+    <p>Sign up to be apart of the community</p>
+
+    <form id="FormContent">
+      <div id="errorText"><h1 >Please Complete all sections of the form!</h1></div>
+      <p>
+        Become a Patreon?   Yes: <input type="radio" name="Patreon" id="PatreonYes" >    No: <input type="radio" name="Patreon" id="PatreonNo" >
+      </p>
+      <p id="sub">
+        <button id="SubBTN">Subscribe?</button> <p id="Subed"></p>
+      </p>
+      <p><input class="inputBox" type="text" placeholder="Name" required name="Name"  id="Name"></p>
+      <p><input class="inputBox" type="text" placeholder="Email" required name="Email"  id="Email"></p>
+      <p><input class="inputBox" type="text" placeholder="Subject" required name="Subject"  id="Subject"></p>
+      <p><textarea class="inputBox" placeholder="Message" name="message" id="Message" cols="30" rows="4"></textarea></p></p>
+      <p><input class="inputBox" type="number" placeholder="Min Amount $5 Enter just the number. No decimal places please." min="5" id="donateAmt"></p>
+
+      <p>
+        <button type="submit" id="SignUpBTN">
+          <i class="fa fa-dragon"></i> SIGN UP
+        </button>
+      </p>
+      <h5 id="Submitted">Submitted! Thank you!</h5>
+    </form>
+  <!-- End Contact Section -->
+  </div>
+  
+    <!-- Footer -->
+  <footer class="w3-content w3-padding-64 w3-text-grey w3-xlarge">
+    <i class="fab fa-facebook" id="facebook"></i>
+    <i class="fab fa-instagram" id="instagram"></i>
+    <i class="fab fa-snapchat" id="snapchat"></i>
+    <i class="fab fa-pinterest" id="pinterest"></i>
+    <i class="fab fa-discord" id="discord"></i>
+  <!-- End footer -->
+  </footer>
+
+<!-- END PAGE CONTENT -->
+</div>
+<!-- <script src="Scripts/M02Additions.js"></script> -->
+<!-- <script src="Scripts/ClockAndButtonFunctions.js"></script> -->
+<!-- <script src="Scripts/M03Additions.js"></script> -->
+<script src="Scripts/M04Additions.js"></script>
+</body>
+</html>

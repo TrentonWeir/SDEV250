@@ -39,6 +39,10 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
     <i class="fa fa-user w3-xxlarge"></i>
     <p>GAMES</p>
   </a>
+  <a href="SignUpForm.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fa fa-dragon w3-xxlarge"></i>
+    <p>Join Us</p>
+  </a>
   <a href="WebSafty.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
     <i class="fa fa-eye w3-xxlarge"></i>
     <p>Web-Safty</p>
@@ -64,7 +68,7 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
     <img src="Image/Unity5Logo.jpeg" alt="Unity5" class="w3-image" width="1600" height="900">
   </header>
 
-  <div class="w3-padding-large">
+  <div class="w3-padding-large" id="timeToCode">
       
     <h1 id="clock">Clock</h1>
     <h1 id="date">Date</h1>
@@ -74,19 +78,37 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
 
 
     <button class="w3-button w3-light-grey w3-padding-large w3-section" id="TenMinute" onclick="GetBreakTime()">
-        <i class="fa fa-download"></i> Ten Minutes
+        <i class="fa fa-dragon"></i> Ten Minutes
     </button>
     <button class="w3-button w3-light-grey w3-padding-large w3-section" id="ThirtyMinute" onclick="GetThirty()">
-        <i class="fa fa-download"></i> Thirty Minutes
+        <i class="fa fa-dragon"></i> Thirty Minutes
     </button>
     <button class="w3-button w3-light-grey w3-padding-large w3-section" id="OneHour" onclick="GetHour()">
-        <i class="fa fa-download"></i> One Hours
+        <i class="fa fa-dragon"></i> One Hours
     </button>
     <button class="w3-button w3-light-grey w3-padding-large w3-section" id="eightHours" onclick="GetWorkTime()">
-        <i class="fa fa-download"></i> Eight Hours
+        <i class="fa fa-dragon"></i> Eight Hours
     </button>
 
     <h1 id="content"></h1>
+    </div>
+
+    <div class="w3-padding-large" id="CodingDays">
+      <form>
+        <fieldset>
+          <label for="dateSelect">
+            Select a date
+          </label>
+          <input type="date" id="dateSelected" />  Project expected to launch 11/01/2023
+        </fieldset>
+        <fieldset class="button">
+          <button class="w3-button w3-light-grey w3-padding-large w3-section" type="button" id="LaunchBTN" onclick="CalculateDateDifference()"><i class="fa fa-dragon"></i> Time Till Launch</button>
+        </fieldset>
+        <fieldset>
+           <p id="day">Time Till Launch     Years:   Months:   Days:</p>
+        </fieldset>
+   </form>
+
     </div>
 
   <!-- About Section -->
@@ -252,5 +274,6 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
 <script src="Scripts/M02Additions.js"></script>
 <script src="Scripts/ClockAndButtonFunctions.js"></script>
 <script src="Scripts/M03Additions.js"></script>
+<script src="scripts/M04.2additions.js"></script>
 </body>
 </html>
