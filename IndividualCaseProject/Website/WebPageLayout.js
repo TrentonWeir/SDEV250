@@ -1,4 +1,4 @@
-//Global Variables
+
 const hBTN = document.getElementById("homeBTN");
 const writeFile = document.getElementById("WriteFile");
 

@@ -1,28 +1,162 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Software Info</title>
-    <link rel="stylesheet" href="index.css">
-</head>
-<body>
-    <h1>Software Info page for my game development</h1>
-    <a href="index.html"><li><button>Home</button></li></a>
-    <a href="aboutUs.html"><li><button>About Us</button></li></a>
-    <a href="GamesInDevelopment.html"><li><button>Games in Development</button></li></a>
-    <a href="SoftwareInfo.html"><li><button>Software Information</button></li></a>
-    <div id="div1"></div>
-    <div id="div2"></div>
-    <div id="div3"></div>
-    <div id="div4"></div>
-    <div id="div5"></div>
-    <div id="div6"></div>
-    <div id="div7"></div>
-    <div id="div8"></div>
-    <div id="div9"></div>
+<html>
+<title>Jaiger:Software</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+<style>
+body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
+.w3-row-padding img {margin-bottom: 12px}
+/* Set the width of the sidebar to 120px */
+.w3-sidebar {width: 120px;background: #222;}
+/* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
+#main {margin-left: 120px}
+/* Remove margins from "page content" on small screens */
+@media only screen and (max-width: 600px) {#main {margin-left: 0}}
+</style>
+<body class="w3-black">
 
+<!-- Icon Bar (Sidebar - hidden on small screens) -->
+<nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center">
+  <!-- Avatar image in top left corner -->
+  <img src="Image/CsharpLogo.png" style="width:100%">
+  <a href="home.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fa fa-home w3-xxlarge"></i>
+    <p>HOME</p>
+  </a>
+  <a href="aboutUs.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fa fa-eye w3-xxlarge"></i>
+    <p>ABOUT</p>
+  </a>
+  <a href="SoftwareInfo.html" class="w3-bar-item w3-button w3-padding-large w3-black">
+    <i class="fa fa-envelope w3-xxlarge"></i>
+    <p>Software</p>
+  </a>
+  <a href="GamesInDevelopment.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fa fa-user w3-xxlarge"></i>
+    <p>GAMES</p>
+  </a>
+  <a href="SignUpForm.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fa fa-dragon w3-xxlarge"></i>
+    <p>Join Us</p>
+  </a>
+  <a href="WebSafty.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fa fa-eye w3-xxlarge"></i>
+    <p>Web-Safty</p>
+  </a>
+</nav>
+
+<!-- Navbar on small screens (Hidden on medium and large screens) -->
+<div class="w3-top w3-hide-large w3-hide-medium" id="myNavbar">
+  <div class="w3-bar w3-black w3-opacity w3-hover-opacity-off w3-center w3-small">
+    <a href="home.html" class="w3-bar-item w3-button" style="width:25% !important">HOME</a>
+    <a href="aboutUs.html" class="w3-bar-item w3-button" style="width:25% !important">ABOUT</a>
+    <a href="SoftwareInfo.html" class="w3-bar-item w3-button" style="width:25% !important">SOFTWARE</a>
+    <a href="GamesInDevelopment.html" class="w3-bar-item w3-button" style="width:25% !important">CONTACT</a>
+  </div>
+</div>
+
+<!-- Page Content -->
+<div class="w3-padding-large" id="main">
+  <!-- Header/Home -->
+  
+  <header class="w3-container w3-padding-32 w3-center w3-black" id="home">
+    <h1 class="w3-jumbo"><span class="w3-hide-small">Jaiger</span> Software</h1>
+    <p>Games made with Unity</p>
+    <img src="Image/Unity5Logo.jpeg" alt="Unity5" class="w3-image" width="1600" height="900">
+  </header>
+
+
+
+  <!-- About Section -->
+  <div class="w3-content w3-justify w3-text-grey w3-padding-64" id="about">
+
+    <a href="https://unity.com/"><h2 class="w3-text-light-grey">Unity 5 Game Engine</h2></a>
+    <hr style="width:200px" class="w3-opacity">
+    <p>
+        Unity is so much more than the world’s best real-time development platform – it’s also a robust ecosystem designed to enable your success. 
+        Join our dynamic community of creators so you can tap into what you need to achieve your vision.
+    </p>
+
+    <a href="https://code.visualstudio.com/"><h2 class="w3-text-light-grey">Visual Studio 2019 and VS Code</h2></a>
+    <hr style="width:200px" class="w3-opacity">
+    <p>
+        We utilize Microsofts Visual Stuido 2019 paired with Unity. Visual Studio has an actual Default package you download at install for coding games.
+        This package is geared towards Unity and once you download Unity you get another package so that when you go to edit "scripts", it opens VS for you.
+        This is definetly the IDE to use when coding C#. In our opinion you should not utilize any others. 
+    </p>
+
+    <a href="https://www.blender.org/"><h2 class="w3-text-light-grey">Blender 2.93LTS</h2></a>
+    <hr style="width:200px" class="w3-opacity">
+    <p>
+        Blender is a free Open Source software that is used to create Game assets and Character models. Blender works well with Unity5
+        and provides a great enviornment to create almost anything. It has every feature you would need to create with. From your general modeling tools,
+        to sculpting, to modifiers to visuallize changes without actually making them. It also is a full Renderer and Animation Software,
+        Which means you don't need to learn and utilize another software to animate your stuff. It cuts down the learning curve which also 
+        increases efficiency.
+    </p>
+
+    <h3 class="w3-padding-16 w3-text-light-grey"></h3>
+    <h3 class="w3-padding-16 w3-text-light-grey">Percntage done in Unity, Blender, and VS code</h3>
+    <p class="w3-wide">Unity5</p>
+    <div class="w3-white">
+      <div class="w3-dark-grey" style="height:28px;width:95%"></div>
+    </div>
+    <p class="w3-wide">VS code</p>
+    <div class="w3-white">
+      <div class="w3-dark-grey" style="height:28px;width:85%"></div>
+    </div>
+    <p class="w3-wide">Blender</p>
+    <div class="w3-white">
+      <div class="w3-dark-grey" style="height:28px;width:80%"></div>
+    </div><br>
     
+    <div class="w3-row w3-center w3-padding-16 w3-section w3-light-grey">
+      <div class="w3-quarter w3-section">
+        <span class="w3-xlarge">3</span><br>
+        Project Ideas
+      </div>
+      <div class="w3-quarter w3-section">
+        <span class="w3-xlarge">1</span><br>
+        Current Development
+      </div>
+      <div class="w3-quarter w3-section">
+        <span class="w3-xlarge">1</span><br>
+        Coder/Visual Artist
+      </div>
+      <div class="w3-quarter w3-section">
+        <span class="w3-xlarge">1</span><br>
+        Goal
+      </div>
+    </div>
+    </div>
+    
+
+  
+
+
+
+  
+    <!-- Footer -->
+  <footer class="w3-content w3-padding-64 w3-text-grey w3-xlarge">
+    <i class="fab fa-facebook" id="facebook"></i>
+    <i class="fab fa-instagram" id="instagram"></i>
+    <i class="fab fa-snapchat" id="snapchat"></i>
+    <i class="fab fa-pinterest" id="pinterest"></i>
+    <i class="fab fa-discord" id="discord"></i>
+    <!-- <p class="w3-medium">Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank" class="w3-hover-text-green">w3.css</a></p> -->
+  <!-- End footer -->
+  </footer>
+
+<!-- END PAGE CONTENT -->
+</div>
+<script src="Scripts/M02Additions.js"></script>
+<script src="Scripts/ClockAndButtonFunctions.js"></script>
+<script src="Scripts/M03Additions.js"></script>
+<script src="scripts/M04.2additions.js"></script>
+<script src="scripts/M05Additions.js"></script>
 </body>
 </html>

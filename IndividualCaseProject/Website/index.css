@@ -1,3 +1,19 @@
+*{
+    text-decoration: none;
+    padding: none;
+    margin:none;
+
+}
+#canvas1{
+    width: 1000px;
+    position: absolute;
+    left: 50%;
+    top:80%;
+    transform: translate(-50%,-50%);
+}
+#upLoad{
+    z-index: 100;
+}
 button{
     background-color: "rbg(200,200,200)";
     color: black;
@@ -8,6 +24,20 @@ button{
     padding: 1em;
     width: 80%;
 }
+/* #timeToCode{
+    padding-left: 20%;
+    position:relative;
+    left: 50%;
+    transform: translate(-50%);
+}
+#CodingDays{
+    padding-left: 20%;
+    position:relative;
+    left: 50%;
+
+    transform: translate(-50%);
+} */
+
 /* textarea{
     margin: .2em;
     padding: 1em;
