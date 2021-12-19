@@ -52,10 +52,12 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
 <!-- Navbar on small screens (Hidden on medium and large screens) -->
 <div class="w3-top w3-hide-large w3-hide-medium" id="myNavbar">
   <div class="w3-bar w3-black w3-opacity w3-hover-opacity-off w3-center w3-small">
-    <a href="home.html" class="w3-bar-item w3-button" style="width:25% !important">HOME</a>
-    <a href="aboutUs.html" class="w3-bar-item w3-button" style="width:25% !important">ABOUT</a>
-    <a href="SoftwareInfo.html" class="w3-bar-item w3-button" style="width:25% !important">SOFTWARE</a>
-    <a href="GamesInDevelopment.html" class="w3-bar-item w3-button" style="width:25% !important">CONTACT</a>
+    <a href="home.html" class="w3-bar-item w3-button" style="width:21% !important">Home</a>
+    <a href="aboutUs.html" class="w3-bar-item w3-button" style="width:21% !important">About</a>
+    <a href="SoftwareInfo.html" class="w3-bar-item w3-button" style="width:21% !important">Software</a>
+    <a href="GamesInDevelopment.html" class="w3-bar-item w3-button" style="width:21% !important">Games</a>
+    <a href="SignUpForm.html" class="w3-bar-item w3-button" style="width:21% !important">JoinUs</a>
+    <a href="WebSafty.html" class="w3-bar-item w3-button" style="width:21% !important">WebSafty</a>
   </div>
 </div>
 
@@ -68,175 +70,37 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
     <img src="Image/Unity5Logo.jpeg" alt="Unity5" class="w3-image" width="1600" height="900">
   </header>
 
-  <div class="w3-padding-large">
-      
-    <h1 id="clock">Clock</h1>
-    <h1 id="date">Date</h1>
-    <h1>How long would you like to code?</h1>
-      
-
-
-
-    <button class="w3-button w3-light-grey w3-padding-large w3-section" id="TenMinute" onclick="GetBreakTime()">
-        <i class="fa fa-download"></i> Ten Minutes
-    </button>
-    <button class="w3-button w3-light-grey w3-padding-large w3-section" id="ThirtyMinute" onclick="GetThirty()">
-        <i class="fa fa-download"></i> Thirty Minutes
-    </button>
-    <button class="w3-button w3-light-grey w3-padding-large w3-section" id="OneHour" onclick="GetHour()">
-        <i class="fa fa-download"></i> One Hours
-    </button>
-    <button class="w3-button w3-light-grey w3-padding-large w3-section" id="eightHours" onclick="GetWorkTime()">
-        <i class="fa fa-download"></i> Eight Hours
-    </button>
-
-    <h1 id="content"></h1>
-    </div>
-
+ 
   <!-- About Section -->
   <div class="w3-content w3-justify w3-text-grey w3-padding-64" id="about">
-    <h2 class="w3-text-light-grey">Unity 5 Game Engine</h2>
+    <h2 class="w3-text-light-grey">About Me: The Current only Dev member</h2>
     <hr style="width:200px" class="w3-opacity">
     <p>
-        Unity is so much more than the world’s best real-time development platform – it’s also a robust ecosystem designed to enable your success. 
-        Join our dynamic community of creators so you can tap into what you need to achieve your vision.
+      I am an aspiring .NET developer, and in my free time I work on a gaming project. I am learning 3D modeling with Blender and utilizing it for animation as well.
+      I use Clip Studio Paint to get my ideas on paper, then take a crack at creating them. When trying to be an indie developer for games you basically have
+      two engines to choose from. Unreal Engine, or Unity. I found Unreal Engine to be massive and difficult to find a starting point.
+      Unity is also huge, however C# is more forgiving for a new programmer and with my work place also utilizing C# and .NET practices
+      I decided that I would switch and start the project that way.
+
     </p>
-    <h3 class="w3-padding-16 w3-text-light-grey"></h3>
-    <h3 class="w3-padding-16 w3-text-light-grey">Percntage done in Unity, Blender, and VS code</h3>
-    <p class="w3-wide">Unity5</p>
-    <div class="w3-white">
-      <div class="w3-dark-grey" style="height:28px;width:95%"></div>
-    </div>
-    <p class="w3-wide">VS code</p>
-    <div class="w3-white">
-      <div class="w3-dark-grey" style="height:28px;width:85%"></div>
-    </div>
-    <p class="w3-wide">Blender</p>
-    <div class="w3-white">
-      <div class="w3-dark-grey" style="height:28px;width:80%"></div>
-    </div><br>
-    
-    <div class="w3-row w3-center w3-padding-16 w3-section w3-light-grey">
-      <div class="w3-quarter w3-section">
-        <span class="w3-xlarge">3</span><br>
-        Project Ideas
-      </div>
-      <div class="w3-quarter w3-section">
-        <span class="w3-xlarge">1</span><br>
-        Current Development
-      </div>
-      <div class="w3-quarter w3-section">
-        <span class="w3-xlarge">1</span><br>
-        Coder/Visual Artist
-      </div>
-      <div class="w3-quarter w3-section">
-        <span class="w3-xlarge">1</span><br>
-        Goal
-      </div>
-    </div>
+  </div>
 
-    <button class="w3-button w3-light-grey w3-padding-large w3-section">
-      <i class="fa fa-download"></i> Download Current Scedule
-    </button>
-    
-    <!-- Grid for pricing tables -->
-    <h3 class="w3-padding-16 w3-text-light-grey">Needs Additional</h3>
-    <div class="w3-row-padding" style="margin:0 -16px">
-      <div class="w3-half w3-margin-bottom">
-        <ul class="w3-ul w3-white w3-center w3-opacity w3-hover-opacity-off">
-          <li class="w3-dark-grey w3-xlarge w3-padding-32">Needs Additional</li>
-          <li class="w3-padding-16">Needs Additional</li>
-          <li class="w3-padding-16">Comming Soon</li>
-          <li class="w3-padding-16">Comming Soon</li>
-          <li class="w3-padding-16">Comming Soon</li>
-          <li class="w3-padding-16">
-            <h2>Comming Soon</h2>
-            <span class="w3-opacity">Comming Soon</span>
-          </li>
-          <li class="w3-light-grey w3-padding-24">
-            <button class="w3-button w3-white w3-padding-large w3-hover-black">Sign Up</button>
-          </li>
-        </ul>
-      </div>
+  <div class="w3-content w3-justify w3-text-grey w3-padding-64" id="about">
+    <h2 class="w3-text-light-grey">About the Project: Jaiger</h2>
+    <hr style="width:200px" class="w3-opacity">
+    <p>
+      The game I am going for will be a platformer with Weapon and skill mechanics. The game will have a level system based on
+      the amount of times you use a weapon. It will also have skills that you gain after using other skills so many times. Your skills will level differently
+      than your weapon and you will have a choice on where to spend your points. Although skill grinding will also affect your skills and the proficiency you have will 
+      be heavily dependent on usage. That being said, I want this to be more of a casual game than like Dark Souls or any game that makes your Grind. I just want you to notice a 
+      difference in the animations and attack power as you progress through the game. I mean, who likes a hero that never gets any better? Kinda boring right?
 
-      <div class="w3-half">
-        <ul class="w3-ul w3-white w3-center w3-opacity w3-hover-opacity-off">
-          <li class="w3-dark-grey w3-xlarge w3-padding-32">Needs Additional</li>
-          <li class="w3-padding-16">Needs Additional</li>
-          <li class="w3-padding-16">Needs Additional</li>
-          <li class="w3-padding-16">Comming Soon</li>
-          <li class="w3-padding-16">Comming Soon</li>
-          <li class="w3-padding-16">
-            <h2>Comming Soon</h2>
-            <span class="w3-opacity">Comming Soon</span>
-          </li>
-          <li class="w3-light-grey w3-padding-24">
-            <button class="w3-button w3-white w3-padding-large w3-hover-black">Sign Up</button>
-          </li>
-        </ul>
-      </div>
-    <!-- End Grid/Pricing tables -->
-    </div>
+    </p>
+  </div>
     
-    <!-- Testimonials -->
-    <h3 class="w3-padding-24 w3-text-light-grey">More Content</h3>  
-    <img src="" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:80px">
-    <p><span class="w3-large w3-margin-right">Comming Soon</span> Comming Soon</p>
-    <p>Comming Soon</p><br>
-    
-    <img src="" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:80px">
-    <p><span class="w3-large w3-margin-right">Comming Soon</span> Comming Soon</p>
-    <p>Comming Soon</p>
+
   <!-- End About Section -->
-  </div>
-  
-  <!-- Portfolio Section -->
-  <div class="w3-padding-64 w3-content" id="photos">
-    <h2 class="w3-text-light-grey">Comming Soon</h2>
-    <hr style="width:200px" class="w3-opacity">
-
-    <!-- Grid for photos -->
-    <div class="w3-row-padding" style="margin:0 -16px">
-      <div class="w3-half">
-        <img src="" style="width:100%">
-        <img src="" style="width:100%">
-        <img src="" style="width:100%">
-      </div>
-
-      <div class="w3-half">
-        <img src="" style="width:100%">
-        <img src="" style="width:100%">
-        <img src="" style="width:100%">
-        <img src="" style="width:100%">
-      </div>
-    <!-- End photo grid -->
-    </div>
-  <!-- End Portfolio Section -->
-  </div>
-
-  <!-- Contact Section -->
-  <div class="w3-padding-64 w3-content w3-text-grey" id="contact">
-    <h2 class="w3-text-light-grey">Contact Me</h2>
-    <hr style="width:200px" class="w3-opacity">
-
-    <div class="w3-section">
-      <p><i class="fa fa-map-marker fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Comming Soon</p>
-      <p><i class="fa fa-phone fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Comming Soon</p>
-      <p><i class="fa fa-envelope fa-fw w3-text-white w3-xxlarge w3-margin-right"> </i> Comming Soon</p>
-    </div><br>
-    <p>Let's get in touch. Send me a message:</p>
-
-    <form action="/action_page.php" target="_blank">
-      <p><input class="w3-input w3-padding-16" type="text" placeholder="Name" required name="Name" id="Name"></p>
-      <p><input class="w3-input w3-padding-16" type="text" placeholder="Email" required name="Email" id="Email"></p>
-      <p><input class="w3-input w3-padding-16" type="text" placeholder="Subject" required name="Subject" id="Subject"></p>
-      <p><input class="w3-input w3-padding-16" type="text" placeholder="Message" required name="Message" id="Message"></p>
-      <p>
-        <button class="w3-button w3-light-grey w3-padding-large" type="submit" onclick="validate()">
-          <i class="fa fa-paper-plane"></i> SEND MESSAGE
-        </button>
-      </p>
-    </form>
+ 
   <!-- End Contact Section -->
   </div>
   
